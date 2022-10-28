@@ -1,9 +1,10 @@
 import Link from "next/link"
+import styles from '../styles/Footer.module.css'
 
 const Footer = () => {
   return (
-    <footer>
-      <nav>
+    <footer className={styles.footer}>
+      <nav className={styles.navegacion}>
         <Link href='/' legacyBehavior>
             <a>
               Inicio
@@ -25,7 +26,7 @@ const Footer = () => {
             </a>
         </Link>
       </nav>
-      <p>
+      <p className={styles.copyright}>
         Todos los derechos reservados {new Date().getFullYear()}
       </p>
     </footer>
