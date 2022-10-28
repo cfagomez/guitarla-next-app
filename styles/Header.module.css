@@ -20,4 +20,22 @@
 
 .navegacion {
     margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.navegacion a:hover,
+.active {
+    background-color: var(--primary);
 }
